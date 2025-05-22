@@ -87,6 +87,38 @@ header h1 {
   animation: img-rgb-border 4s alternate infinite;
 }
 
+.inicio button {
+  margin-top: 30px;
+  border: none;
+  background: linear-gradient(229deg, red 0%, yellow 25%, lime 50%, blue 75%, magenta 100%);
+  background-size: 300% 300%;
+  padding: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  animation: btn-rgb 2s alternate infinite ease-in-out;
+  cursor: pointer;
+  transition: transform 300ms;
+  text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+  box-shadow: 3px 1px 21px 7px rgba(0, 0, 0, 0.75);
+}
+
+.inicio button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes btn-rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 @keyframes img-rgb-border {
   0% {
     border: 2px solid red;
