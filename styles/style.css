@@ -128,3 +128,19 @@ header h1 {
   margin: 15px;
   text-align: center;
 }
+
+.my-way h3 {
+  margin-bottom: 15px;
+}
+
+.my-way {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
