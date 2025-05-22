@@ -41,3 +41,63 @@ header h1 {
   color: white;
   padding: 20px;
 }
+
+/* inicio */
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio span {
+  color: orangered;
+}
+
+.inicio h2,
+.inicio p {
+  text-align: center;
+  margin: 10px;
+}
+
+.inicio h2 {
+  animation: h2-inicio 0.5s alternate forwards;
+}
+
+@keyframes h2-inicio {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.inicio img {
+  width: 200px;
+  border-radius: 50%;
+  animation: img-rgb-border 4s alternate infinite;
+}
+
+@keyframes img-rgb-border {
+  0% {
+    border: 2px solid red;
+  }
+
+  25% {
+    border: 2px solid rgb(238, 255, 0);
+  }
+
+  50% {
+    border: 2px solid rgb(0, 255, 34);
+  }
+
+  75% {
+    border: 2px solid rgb(0, 17, 255);
+  }
+
+  100% {
+    border: 2px solid rgb(183, 0, 255);
+  }
+}
