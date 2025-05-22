@@ -30,6 +30,12 @@ header h1 {
   padding: 20px;
   cursor: pointer;
   transition: background-color 300ms;
+  text-shadow:
+    0 0 5px orangered,
+    0 0 10px orangered,
+    0 0 20px orangered,
+    0 0 40px orangered,
+    0 0 80px orangered;
 }
 
 .nav ul li:hover {
@@ -40,6 +46,7 @@ header h1 {
   text-decoration: none;
   color: white;
   padding: 20px;
+
 }
 
 /* inicio */
@@ -100,4 +107,24 @@ header h1 {
   100% {
     border: 2px solid rgb(183, 0, 255);
   }
+}
+
+/* sobre mi */
+.sobre-mi h2 {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-shadow:
+    0 0 5px orangered,
+    0 0 10px orangered,
+    0 0 20px orangered,
+    0 0 40px orangered,
+    0 0 80px orangered;
+}
+
+.sobre-mi p {
+  margin: 15px;
+  text-align: center;
 }
