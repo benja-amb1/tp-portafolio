@@ -278,32 +278,74 @@ header h1 {
 }
 
 /* contacto */
-.form-card {}
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.form-card h3 {
+  text-align: center;
+}
 
 form {
+  background: linear-gradient(180deg, #ff9100 0%, #ff4500 80%);
+  border-radius: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 600px;
-  height: 400px;
-  background-color: red;
-  padding: 20px;
-  margin: 20px;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+  color: white;
+  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.75);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  border-radius: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 input,
 textarea {
+  margin-top: 5px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  font-size: 14px;
 }
 
-label {
-  font-weight: bold;
+textarea {
+  resize: none;
+  min-height: 80px;
 }
+
+.form-card button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.form-card button:hover {
+  background-color: #333;
+}
+
+
 
 /* footer */
 footer {
