@@ -156,7 +156,8 @@ header h1 {
 
 /* secciones */
 .sobre-mi h2,
-.proyectos h2 {
+.proyectos h2,
+.habilidades h2 {
   text-align: center;
   margin-top: 30px;
   background-color: black;
