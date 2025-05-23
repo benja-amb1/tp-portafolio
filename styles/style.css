@@ -390,7 +390,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav {
     display: none;
   }
@@ -428,6 +428,8 @@ footer {
   .card-grid,
   .card-grid-habilidades {
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 
   form h3 {
@@ -451,6 +453,10 @@ footer {
 
   .inicio button {
     width: 100%;
+  }
+
+  .card p {
+    font-size: 14px;
   }
 
   .card img {
