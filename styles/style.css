@@ -234,6 +234,49 @@ header h1 {
   background-color: rgb(36, 36, 36);
 }
 
+/* habilidades */
+.card-grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px;
+}
+
+.card-habilidades {
+  background-color: #ffffff00;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 1px 2px 28px 6px rgba(0, 0, 0, 0.75);
+  transition: transform 300ms;
+}
+
+.card-habilidades:hover {
+  transform: scale(1.05);
+}
+
+.card-habilidades h3,
+.card-habilidades p {
+  color: black;
+  margin: 20px;
+}
+
+.card-habilidades p {
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.card-habilidades img {
+  width: 80px;
+}
+
+
 /* footer */
 footer {
   background-color: black;
