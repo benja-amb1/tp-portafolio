@@ -5,6 +5,11 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* scroll botones */
+html {
+  scroll-behavior: smooth;
+}
+
 /* header */
 header h1 {
   text-align: center;
@@ -127,10 +132,6 @@ header h1 {
   box-shadow: 3px 1px 21px 7px rgba(0, 0, 0, 0.75);
 }
 
-.inicio button:hover {
-  transform: scale(1.1);
-}
-
 @keyframes btn-rgb {
   0% {
     background-position: 0% 50%;
@@ -153,8 +154,9 @@ header h1 {
 
 
 
-/* sobre mi */
-.sobre-mi h2 {
+/* secciones */
+.sobre-mi h2,
+.proyectos h2 {
   text-align: center;
   margin-top: 30px;
   background-color: black;
@@ -168,6 +170,7 @@ header h1 {
     0 0 80px orangered;
 }
 
+/* sobre mi */
 .sobre-mi p {
   margin: 15px;
   text-align: center;
@@ -179,6 +182,55 @@ header h1 {
 
 .my-way {
   text-align: center;
+}
+
+/* proyectos */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+}
+
+.card {
+  margin: 20px;
+  background: #dfdfdf;
+  background: linear-gradient(180deg, #ff9100 0%, #ff4500 80%);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0px 34px 4px rgba(0, 0, 0, 0.75);
+  transition: transform 300ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3,
+.card p {
+  margin: 20px;
+  color: white;
+}
+
+.card img {
+  width: 300px;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 300ms;
+}
+
+.card a:hover {
+  background-color: rgb(36, 36, 36);
 }
 
 /* footer */
