@@ -366,41 +366,34 @@ footer {
 }
 
 /* media-queries */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .card-grid {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
   }
 
   .card-grid-habilidades {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
-@media (max-width: 768px) {
-
+@media (max-width: 1024px) {
   header h1 {
-    font-size: 20px;
-  }
-
-  .inicio h2 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .card-grid {
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card-grid-habilidades {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 390px) and (max-width: 767px) {
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 
   .nav-hamb {
     display: block;
@@ -424,14 +417,15 @@ footer {
       0 0 80px orangered;
   }
 
-  .nav {
-    display: none;
+  header h1 {
+    font-size: 20px;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr;
+  .inicio h2 {
+    font-size: 18px;
   }
 
+  .card-grid,
   .card-grid-habilidades {
     grid-template-columns: 1fr;
   }
@@ -443,5 +437,32 @@ footer {
   .input-grid {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 390px) {
+  header h1 {
+    font-size: 16px;
+  }
+
+  .inicio h2,
+  .inicio p {
+    font-size: 14px;
+  }
+
+  .inicio button {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
 }
